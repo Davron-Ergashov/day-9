@@ -1,0 +1,89 @@
+.adoption {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    .adoption {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .adoption_block {
+        padding-left: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: rgb(255, 183, 117);
+        background-repeat: no-repeat;
+        background-image: url('/img/adoption_bg.svg');
+        background-position: right;
+        background-size: cover;
+    }
+
+    .adoption_title {
+        color: rgb(0, 52, 89);
+        font-size: 52px;
+        font-weight: 800;
+        line-height: 68px;
+        text-transform: capitalize;
+        padding-right: 58px;
+    }
+
+    .adoption_about {
+        color: rgb(0, 52, 89);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 54px;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+    }
+
+    .adoption_text {
+        color: rgb(36, 43, 51);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        margin-bottom: 42px;
+        max-width: 210px;
+        width: 100%;
+    }
+
+    .adoption_btns {
+        display: flex;
+    }
+
+    .adoption_btn {
+        @include main_btn;
+        margin-right: 20px;
+
+        &:hover {
+            background-color: #003459;
+            box-shadow: 0px 4px 28px -2px #000000b3;
+            transform: scale(1.03);
+            transition: all 0.3s ease;
+        }
+    }
+
+    .adoption_btn2 {
+        color: #003459;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        box-sizing: border-box;
+        border: 1.5px solid rgb(0, 52, 89);
+        border-radius: 57px;
+        padding: 10px 28px;
+
+        &:hover {
+            background-color: #dadada;
+            box-shadow: 0px 4px 28px -2px #000000b3;
+            transform: scale(1.03);
+            transition: all 0.3s ease;
+        }
+    }
+
+    .adopted_img {
+        vertical-align: bottom;
+    }
+}
